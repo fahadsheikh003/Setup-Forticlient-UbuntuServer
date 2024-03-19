@@ -2,35 +2,51 @@
 
 First download the Fortigate SSLVPN CLI
 
-`wget http://cdn.software-mirrors.com/forticlientsslvpn_linux_4.4.2328.tar.gz`
+```
+wget https://github.com/fahadsheikh003/Setup-Forticlient-UbuntuServer/blob/main/forticlientsslvpn_linux_4.4.2328.tar.gz
+```
 
 You need to uncompress the downloaded file:
 
-`tar -xzvf forticlientsslvpn_linux_4.4.2328.tar.gz`
+```
+tar -xzvf forticlientsslvpn_linux_4.4.2328.tar.gz
+```
 
 Install ppp (in case you don't have it):
 
-`sudo apt-get install ppp`
+```
+sudo apt-get install ppp
+```
 
 Go to the installer setup dir:
 
-`cd ./forticlientsslvpn/64bit/helper`
+```
+cd ./forticlientsslvpn/64bit/helper
+```
 
 and run the setup file:
 
-`sudo ./setup.linux.sh`
+```
+sudo ./setup.linux.sh
+```
 
 go to the following dir
 
-`cd  forticlientsslvpn/64bit/`
+```
+cd  forticlientsslvpn/64bit/
+```
 
 Finally you can connect whenever you want using this command:
 
-`./forticlientsslvpn_cli --server serveraddress:port --vpnuser username`
+```
+./forticlientsslvpn_cli --server serveraddress:port --vpnuser username
+```
 
 For automation, Install expect (in case you don't have it):
 
-`sudo apt-get install expect`
+```
+sudo apt-get install expect
+```
 
 Sample Expect Script to auto connect to Forticlient
 ```
